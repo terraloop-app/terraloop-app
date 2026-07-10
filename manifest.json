@@ -1,0 +1,36 @@
+{
+  "name": "TerraLoop",
+  "short_name": "TerraLoop",
+  "description": "TerraLoop",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0868E3",
+  "orientation": "portrait-primary",
+ "icons": [
+  {
+    "src": "asset/ikon/logo-192x192.png",
+    "sizes": "192x192",
+    "type": "image/png",
+    "purpose": "any"
+  },
+  {
+    "src": "asset/ikon/logo-512x512.png",
+    "sizes": "512x512",
+    "type": "image/png",
+    "purpose": "any"
+  },
+  {
+    "src": "asset/ikon/logo-192x192-maskable.png",
+    "sizes": "192x192",
+    "type": "image/png",
+    "purpose": "maskable"
+  },
+  {
+    "src": "asset/ikon/logo-512x512-maskable.png",
+    "sizes": "512x512",
+    "type": "image/png",
+    "purpose": "maskable"
+  }
+]
+}

@@ -1,0 +1,1897 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>TerraLoop</title>
+    <!-- PWA Manifest -->
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#0868E3">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="SISA+">
+<link rel="apple-touch-icon" href="Asset/ikon/logo-192x192.png">
+
+<!-- Icons untuk berbagai device -->
+<link rel="icon" type="image/png" sizes="192x192" href="asset/ikon/logo-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="asset/ikon/logo-512x512.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Semua CSS (landing page + web utama) sekarang ada di file terpisah -->
+    <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body class="landing-mode">
+
+<!-- ======================================================== -->
+<!-- 1) LANDING PAGE (halaman publik sebelum login)            -->
+<!-- ======================================================== -->
+<div id="landing-wrapper">
+
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="brand">
+                <img src="https://i.ibb.co.com/5XJN9RRZ/image-removebg-preview.png" alt="TerraLoop Logo" width="40" height="40" loading="lazy" decoding="async">
+                <span class="brand-text"></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#beranda" class="nav-link active">Beranda</a></li>
+                <li><a href="#tentang" class="nav-link">Tentang</a></li>
+                <li><a href="#aksi" class="nav-link">Aksi Nyata</a></li>
+                <li><a href="#fitur" class="nav-link">Fitur</a></li>
+                <li class="nav-mobile-cta" style="padding-top:0.5rem;">
+                    <a href="#" onclick="showApp('sipick'); return false;" class="btn btn-primary" style="width:100%;justify-content:center;">KONTRIBUSI SEKARANG</a>
+                </li>
+            </ul>
+
+            <a href="#" onclick="showApp('sipick'); return false;" class="btn btn-primary nav-cta-desktop">KONTRIBUSI SEKARANG</a>
+
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section id="beranda" class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content fade-up">
+                <div class="badge"></div>
+                <h1 class="hero-title">Mengurai Sisa Menjemput Asa</h1>
+                <p class="hero-desc">Ekosistem digital yang menyatukan langkah masyarakat, pelaku usaha, dan komunitas untuk menghidupkan kembali limbah organik demi bumi yang lebih hijau dan lestari.</p>
+                <div class="hero-actions">
+                    <a href="#" onclick="showApp('sipick'); return false;" class="btn btn-primary">KONTRIBUSI SEKARANG</a>
+                    <a href="#aksi" class="btn btn-outline">Lihat Aksi Nyata</a>
+                </div>
+            </div>
+            
+           
+        </div>
+    </section>
+
+    <section class="slider-section">
+        <div class="container">
+            <div class="partner-section-inner fade-up">
+                <p class="slider-title">Fokus Pemberdayaan UMKM</p>
+                <p class="partner-desc">Kami bergerak bersama para pelaku usaha lokal untuk mewujudkan manajemen sampah yang bertanggung jawab. Melalui digitalisasi penjemputan dan bioconversion, SISA+ membantu UMKM mengubah tantangan limbah organik menjadi peluang keberlanjutan yang berdampak nyata bagi lingkungan.</p>
+                <div class="partner-grid">
+        
+    <div class="partner-item">
+        <div class="partner-card">
+            <img class="partner-card-img" src="https://i.ibb.co.com/5xvNQdGD/Whats-App-Image-2026-07-06-at-09-39-29.webp" alt="UMKM Penghasil Limbah Organik">
+        </div>
+        <div class="partner-card-label">UMKM Penghasil Limbah Organik</div>
+    </div>
+    <div class="partner-item">
+        <div class="partner-card">
+            <img class="partner-card-img" src="https://i.ibb.co.com/5xvNQdGD/Whats-App-Image-2026-07-06-at-09-39-29.webp" alt="Pedagang Sayur dan Buah">
+        </div>
+        <div class="partner-card-label">Pedagang Sayur dan Buah</div>
+    </div>
+    <div class="partner-item">
+        <div class="partner-card">
+            <img class="partner-card-img" src="https://i.ibb.co.com/5xvNQdGD/Whats-App-Image-2026-07-06-at-09-39-29.webp" alt="UMKM Kuliner">
+        </div>
+        <div class="partner-card-label">UMKM Kuliner</div>
+    </div>
+    <div class="partner-item">
+        <div class="partner-card">
+            <img class="partner-card-img" src="https://i.ibb.co.com/5xvNQdGD/Whats-App-Image-2026-07-06-at-09-39-29.webp" alt="Toko Bahan Pangan">
+        </div>
+        <div class="partner-card-label">Toko Bahan Pangan</div>
+    </div>
+</div>
+                </div>
+            </div>
+    </section>
+
+    <section id="aksi" class="case-study-section">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2 class="section-title">Aksi Nyata Kontributor Kami</h2>
+                <p class="section-subtitle">Melihat langsung bagaimana mitra dan komunitas kami memberikan dampak positif terhadap lingkungan melalui SISA+.</p>
+            </div>
+
+            <div class="carousel-wrapper">
+                <div class="carousel-container">
+                    <div class="case-study-grid" id="caseStudyGrid">
+                        <div class="cs-card fade-up">
+                            <div class="cs-card-inner">
+                            <div class="cs-img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=600&q=80" alt="Toko Aman" width="600" height="280" loading="lazy" decoding="async" style="aspect-ratio: 600/280;">
+                            </div>
+                            <div class="cs-content">
+                                <div class="cs-label">KONTRIBUSI AKTIF</div>
+                                <h3 class="cs-title">Sampah Toko Aman</h3>
+                                <p class="cs-desc">Toko Aman telah berkontribusi dengan menyumbangkan sampah organik sebanyak 150 Kg minggu ini, mencegah penumpukan di TPA dan mengalihkannya menjadi pakan maggot bernilai tinggi.</p>
+                                <div class="cs-date">25 Mei 2026</div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="cs-card fade-up" style="transition-delay: 0.1s;">
+                            <div class="cs-card-inner">
+                            <div class="cs-img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1605600659908-0ef719419d41?auto=format&fit=crop&w=600&q=80" alt="Restoran Berkah" width="600" height="280" loading="lazy" decoding="async" style="aspect-ratio: 600/280;">
+                            </div>
+                            <div class="cs-content">
+                                <div class="cs-label">KONTRIBUSI AKTIF</div>
+                                <h3 class="cs-title">Sisa Pangan Restoran</h3>
+                                <p class="cs-desc">Restoran Berkah rutin menyalurkan sisa potongan sayur dan buah hingga 80 Kg setiap harinya, mendukung ekonomi sirkular masyarakat sekitar dengan sangat baik.</p>
+                                <div class="cs-date">24 Mei 2026</div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="cs-card fade-up" style="transition-delay: 0.2s;">
+                            <div class="cs-card-inner">
+                            <div class="cs-img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?auto=format&fit=crop&w=600&q=80" alt="Komunitas Warga" width="600" height="280" loading="lazy" decoding="async" style="aspect-ratio: 600/280;">
+                            </div>
+                            <div class="cs-content">
+                                <div class="cs-label">PENGELOLAAN LINGKUNGAN</div>
+                                <h3 class="cs-title">Bank Sampah Warga RT 04</h3>
+                                <p class="cs-desc">Warga RT 04 berhasil mereduksi emisi karbon dengan mengumpulkan sampah dapur secara kolektif dan memantaunya secara real-time di aplikasi SI MART.</p>
+                                <div class="cs-date">22 Mei 2026</div>
+                            </div>
+                            </div>
+                        </div>
+            
+                </div>
+
+                <div class="carousel-controls">
+                    <button class="carousel-btn" id="prevBtn" aria-label="Previous slide">
+                        &#10094;
+                    </button>
+                    <button class="carousel-btn" id="nextBtn" aria-label="Next slide">
+                        &#10095;
+                    </button>
+                </div>
+            </div>
+
+            <div class="carousel-indicators" id="indicators"></div>
+        </div>
+    </div>
+    </section>
+
+    <section id="biokonversi" class="maggot-section">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2 class="section-title">Siklus Biokonversi: Dari Limbah Menjadi Berkah</h2>
+                <p class="section-subtitle">Bagaimana SISA+ bersama Maggrow mengubah sisa organik UMKM menjadi produk bernilai tinggi melalui ekosistem biokonversi yang alami, bersih, dan berkelanjutan.</p>
+            </div>
+
+            <div class="biokonversi-grid">
+                <div class="biokonversi-card fade-up">
+                    <div class="biokonversi-step-number">01</div>
+                    <h3 class="biokonversi-step-title">Pengumpulan & Pemilahan</h3>
+                    <p class="biokonversi-step-desc">Limbah organik dari mitra UMKM kuliner dan pedagang pasar dikumpulkan secara terjadwal melalui sistem penjemputan SI PICK.</p>
+                    <div class="biokonversi-connector"></div>
+                </div>
+
+                <div class="biokonversi-card fade-up" style="transition-delay: 0.1s;">
+                    <div class="biokonversi-step-number">02</div>
+                    <h3 class="biokonversi-step-title">Proses Biokonversi</h3>
+                    <p class="biokonversi-step-desc">Limbah organik yang telah dicacah menjadi pakan utama bagi larva Maggot BSF (Black Soldier Fly) untuk mengurai sampah secara cepat tanpa bau menyengat.</p>
+                    <div class="biokonversi-connector"></div>
+                </div>
+
+                <div class="biokonversi-card fade-up" style="transition-delay: 0.2s;">
+                    <div class="biokonversi-step-number">03</div>
+                    <h3 class="biokonversi-step-title">Pemanenan Maggrow</h3>
+                    <p class="biokonversi-step-desc">Maggot dewasa yang kaya akan protein tinggi dipanen dalam kurun waktu optimal untuk siap diolah menjadi pakan ternak dan peliharaan premium.</p>
+                    <div class="biokonversi-connector"></div>
+                </div>
+
+                <div class="biokonversi-card fade-up" style="transition-delay: 0.3s;">
+                    <div class="biokonversi-step-number">04</div>
+                    <h3 class="biokonversi-step-title">Pupuk Organik Kasgot</h3>
+                    <p class="biokonversi-step-desc">Sisa residu atau bekas sarang maggot (Kasgot) dimanfaatkan kembali sebagai pupuk organik berkualitas tinggi untuk menyuburkan tanah pertanian.</p>
+                    <div class="biokonversi-connector"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tentang" class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card fade-up">
+                    <div class="stat-num counter" data-target="1200">0</div>
+                    <div class="stat-text">Produksi Sampah/Hari (Ton)</div>
+                </div>
+                <div class="stat-card fade-up" style="transition-delay: 0.1s;">
+                    <div class="stat-num counter" data-target="60">0</div>
+                    <div class="stat-text">Sampah Organik (%)</div>
+                </div>
+                <div class="stat-card fade-up" style="transition-delay: 0.2s;">
+                    <div class="stat-num counter" data-target="100">0</div>
+                    <div class="stat-text">Kontributor Aktif</div>
+                </div>
+                <div class="stat-card fade-up" style="transition-delay: 0.3s;">
+                    <div class="stat-num">24/7</div>
+                    <div class="stat-text">Monitoring Data</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="fitur" class="features-section">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2 class="section-title">Solusi Terintegrasi dalam Satu Platform</h2>
+                <p class="section-subtitle">SISA+ menghadirkan ekosistem digital untuk mempermudah, melacak, dan memaksimalkan nilai dari setiap sampah organik yang dihasilkan.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card fade-up">
+                    <div class="feature-icon-wrapper">P</div>
+                    <h3 class="feature-title">SI PICK</h3>
+                    <p class="feature-desc">Pengangkutan dan pengelolaan sampah organik secara digital dan terjadwal dengan efisiensi rute pintar.</p>
+                </div>
+                <div class="feature-card fade-up" style="transition-delay: 0.1s;">
+                    <div class="feature-icon-wrapper">M</div>
+                    <h3 class="feature-title">SI MART</h3>
+                    <p class="feature-desc">Pelaporan dan pemantauan kondisi penumpukan sampah secara real-time dari berbagai titik kontributor.</p>
+                </div>
+                <div class="feature-card fade-up" style="transition-delay: 0.2s;">
+                    <div class="feature-icon-wrapper">I</div>
+                    <h3 class="feature-title">SI IMPACT</h3>
+                    <p class="feature-desc">Mengukur dampak pengelolaan sampah terhadap lingkungan melalui konversi data statistik dan emisi.</p>
+                </div>
+                <div class="feature-card fade-up" style="transition-delay: 0.3s;">
+                    <div class="feature-icon-wrapper">T</div>
+                    <h3 class="feature-title">SI TRACK</h3>
+                    <p class="feature-desc">Pelacakan aktivitas dan riwayat kontribusi pengelolaan sampah secara transparan dan terintegrasi penuh.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontribusi" class="cta-section">
+        <div class="container cta-content fade-up">
+            <h2>Siap Berkontribusi untuk Lingkungan?</h2>
+            <p>Jadilah bagian dari revolusi pengelolaan sampah berbasis teknologi. Mulai kontribusi nyata Anda hari ini dan ciptakan lingkungan yang lebih bersih bersama SISA+.</p>
+            <a href="#" onclick="showApp('sipick'); return false;" class="btn btn-large">MULAI KONTRIBUSI SEKARANG</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="https://i.imgur.com/inZtEhd.jpeg" alt="SISA+ Logo" width="48" height="48" loading="lazy" decoding="async">
+                    <span class="brand-text">SISA+</span>
+                    <p>Platform smart waste management yang menghubungkan masyarakat, komunitas, dan pemerintah dalam pengelolaan sampah organik berbasis teknologi digital dan data.</p>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Fitur</h4>
+                    <div class="footer-links">
+                        <a href="#fitur">SI PICK</a>
+                        <a href="#fitur">SI MART</a>
+                        <a href="#fitur">SI IMPACT</a>
+                        <a href="#fitur">SI TRACK</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Perusahaan</h4>
+                    <div class="footer-links">
+                        <a href="#tentang">Tentang Kami</a>
+                        <a href="#aksi">Aksi Nyata</a>
+                        <a href="#">Mitra</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Bantuan</h4>
+                    <div class="footer-links">
+                        <a href="#">Pusat Bantuan</a>
+                        <a href="#">Kebijakan Privasi</a>
+                        <a href="#">Kontak</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 SISA+ (Smart Integrated Sustainable Action+). Bersama Mengelola, Bersama Menjaga.</p>
+                <p>Designed for Future Environment</p>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<!-- ======================================================== -->
+<!-- 2) WEB UTAMA / PLATFORM (login, customer, admin)         -->
+<!-- (tersembunyi hingga tombol Kontribusi ditekan)            -->
+<!-- ======================================================== -->
+<div id="app-wrapper" style="display:none;">
+
+    <!-- ============ LOGIN LAYER ============ -->
+    <div id="login-layer">
+      <div class="auth-card" id="authCard">
+
+        <!-- SISI KIRI: FORM -->
+        <div class="auth-form-side">
+            <img src="https://i.ibb.co.com/5XJN9RRZ/image-removebg-preview.png" alt="SISA+" class="auth-logo">
+            
+            <div id="colorMasukText" class="auth-intro-text">
+    <h2>Halo, Sobat Terra!</h2>
+    <p>Daftarkan dirimu untuk mulai berkontribusi menjaga lingkungan bersama TerraLoop</p>
+</div>
+
+
+            <!-- FORM MASUK -->
+            <div id="formMasuk" class="auth-form active">
+                <div class="auth-field">
+                    <input type="text" id="masukNama" placeholder="Nama" autocomplete="off">
+                </div>
+                <div class="auth-field auth-field-password">
+                    <input type="password" id="masukPassword" placeholder="Kata Sandi" autocomplete="off">
+                    <button type="button" class="auth-eye-btn" onclick="togglePassword('masukPassword', this)">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17.94 17.94A10.94 10.94 0 0 1 12 20c-7 0-11-8-11-8a21.8 21.8 0 0 1 5.06-6.06M9.9 4.24A10.94 10.94 0 0 1 12 4c7 0 11 8 11 8a21.6 21.6 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/>
+                            <line x1="1" y1="1" x2="23" y2="23"/>
+                        </svg>
+                    </button>
+                </div>
+                <button class="auth-btn" onclick="handleMasuk()">MASUK</button>
+                <div class="auth-divider"><span>atau</span></div>
+                <p class="auth-switch-text">Belum punya akun? <a href="#" onclick="switchAuthMode('daftar');return false;">Daftar di sini</a></p>
+                <p class="auth-switch-text" style="margin-top:8px;"><a href="#" onclick="switchAuthMode('lupa');return false;">Lupa kata sandi?</a></p>
+            </div>
+
+            <!-- FORM DAFTAR - STEP 1 -->
+            <div id="formDaftar1" class="auth-form">
+                <h2 class="auth-title">Daftar Akun</h2>
+                <div class="auth-field">
+                    <input type="text" id="daftarNama" placeholder="Nama Anda" autocomplete="off">
+                </div>
+                <div class="auth-field auth-field-password">
+                    <input type="password" id="daftarPassword" placeholder="Buat Kata Sandi" autocomplete="off">
+                    <button type="button" class="auth-eye-btn" onclick="togglePassword('daftarPassword', this)">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                            <circle cx="12" cy="12" r="3"/>
+                        </svg>
+                    </button>
+                </div>
+                <button class="auth-btn" onclick="handleDaftarStep1()">LANJUT</button>
+                <p class="auth-switch-text">Sudah punya akun? <a href="#" onclick="switchAuthMode('masuk');return false;">Masuk di sini</a></p>
+            </div>
+
+            <!-- FORM DAFTAR - STEP 2 -->
+            <div id="formDaftar2" class="auth-form">
+                <h2 class="auth-title">Lengkapi Data</h2>
+                <div class="auth-field">
+                    <input type="text" id="daftarToko" placeholder="Nama Toko (kosongkan jika rumah tangga)" autocomplete="off">
+                </div>
+                <div class="auth-field">
+                    <input type="tel" id="daftarTelepon" placeholder="Nomor HP/WA" maxlength="13" inputmode="numeric" autocomplete="off">
+                </div>
+                <div class="auth-field">
+                    <input type="text" id="daftarAlamat" placeholder="Alamat Lengkap" autocomplete="off">
+                </div>
+                <button class="auth-btn" onclick="handleDaftarStep2()">SELESAIKAN DAFTAR</button>
+            </div>
+        </div>
+	<!-- FORM LUPA PASSWORD -->
+<div id="formLupa" class="auth-form">
+    <h2 class="auth-title">Lupa Kata Sandi</h2>
+    <div class="auth-field">
+        <input type="text" id="lupaNama" placeholder="Nama" autocomplete="off">
+    </div>
+    <div class="auth-field">
+        <input type="text" id="lupaTelepon" placeholder="No. HP terdaftar" autocomplete="off">
+    </div>
+    <button class="auth-btn" onclick="handleCekLupaPassword()">VERIFIKASI</button>
+    <p class="auth-switch-text">Sudah ingat? <a href="#" onclick="switchAuthMode('masuk');return false;">Masuk di sini</a></p>
+</div>
+
+<!-- FORM SET PASSWORD BARU -->
+<div id="formResetPassword" class="auth-form">
+    <h2 class="auth-title">Buat Kata Sandi Baru</h2>
+    <div class="auth-field auth-field-password">
+        <input type="password" id="resetPasswordBaru" placeholder="Kata Sandi Baru" autocomplete="off">
+        <button type="button" class="auth-eye-btn" onclick="togglePassword('resetPasswordBaru', this)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                <circle cx="12" cy="12" r="3"/>
+            </svg>
+        </button>
+    </div>
+    <button class="auth-btn" onclick="handleSimpanPasswordBaru()">SIMPAN KATA SANDI BARU</button>
+</div>
+
+       <!-- SISI KANAN: PANEL WARNA (khusus mode Daftar) -->
+        <div class="auth-color-side" id="authColorSide" style="display:none;">
+            <div id="colorDaftarText" style="display:none;">
+                <h2>Selamat Datang Kembali!</h2>
+                <p>Sudah punya akun? Masuk untuk melanjutkan kontribusimu</p>
+                <button class="auth-btn-outline" onclick="switchAuthMode('masuk')">MASUK</button>
+            </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ---------------------------------------------------- -->
+    <!-- 2a) WEB CUSTOMER (tampilan untuk pengguna/kontributor) -->
+    <!-- ---------------------------------------------------- -->
+    <div id="customerView" class="main-view" style="width:100%;">
+
+    <!-- Dekorasi background orbs -->
+    <div aria-hidden="true" style="position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden;">
+        <!-- Orb hijau besar kiri atas -->
+        <div style="position:absolute;top:-80px;left:-80px;width:320px;height:320px;border-radius:50%;background:radial-gradient(circle,rgba(82,198,122,0.10) 0%,transparent 70%);filter:blur(2px);"></div>
+        <!-- Orb biru kanan bawah -->
+        <div style="position:absolute;bottom:80px;right:-60px;width:260px;height:260px;border-radius:50%;background:radial-gradient(circle,rgba(74,144,226,0.10) 0%,transparent 70%);filter:blur(2px);"></div>
+        <!-- Orb teal tengah -->
+        <div style="position:absolute;top:45%;left:50%;transform:translate(-50%,-50%);width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,rgba(16,185,129,0.06) 0%,transparent 70%);"></div>
+        <!-- Garis dekorasi halus -->
+        <svg style="position:absolute;bottom:70px;left:0;right:0;width:100%;opacity:0.04;" height="120" viewBox="0 0 400 120" preserveAspectRatio="none">
+            <path d="M0,60 Q100,20 200,60 T400,60" stroke="#52C67A" stroke-width="1.5" fill="none"/>
+            <path d="M0,80 Q100,40 200,80 T400,80" stroke="#4A90E2" stroke-width="1" fill="none"/>
+        </svg>
+    </div>
+
+
+    <!-- Header FULL WIDTH - di luar container -->
+    <div class="container">
+
+        <!-- Home Page -->
+        <div id="homePage" class="page-section active">
+
+            <div class="home-hero slide-up">
+                <div class="home-hero-icons">
+                  <button class="home-hero-icon-btn" onclick="switchPage('notifPage', null)" style="position:relative;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bell-icon lucide-bell"><path d="M10.268 21a2 2 0 0 0 3.464 0"/><path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"/></svg><span class="cart-badge" id="notifBadgeHome">0</span></button>
+                    
+                    <button class="home-hero-icon-btn" onclick="logout()"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-log-out-icon lucide-log-out"><path d="m16 17 5-5-5-5"/><path d="M21 12H9"/><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/></svg></button>
+                </div>
+                <div class="home-hero-top">
+                    <div class="home-hero-greeting">
+                        <div class="home-hero-avatar" onclick="switchPage('profilePage')">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0868E3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="8" r="4"/>
+                                <path d="M5 20c0-3.5 3-6 7-6s7 2.5 7 6"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="home-hero-name">Halo, <span id="userName">User</span> </div>
+                            <div class="home-hero-level" id="headerLevelBadge"> Belum Ada Level</div>
+                        </div>
+                    </div>
+                               </div>
+
+               <div class="home-hero-box">
+                    <div class="home-hero-label">Total Kontribusi Anda</div>
+                    <div style="display:flex;align-items:baseline;gap:8px;">
+                        <div class="home-hero-value"><span id="totalWaste">0</span> Koin</div>
+                        <div class="home-hero-rupiah" id="totalWasteRupiah">= Rp0</div>
+                    </div>
+                    <div id="levelIconHome" class="level-icon-home"></div>   <!-- ← TAMBAHKAN INI -->
+                    <button class="home-hero-btn" onclick="goToRewardPage()">Lihat boy</button>
+                </div>
+            </div>
+
+            <div class="home-actions-title">Setor Sampah Sekarang</div>
+            <div class="home-actions-grid slide-up">
+                <div class="home-action-card solid" onclick="switchPage('sipickPage', null)">
+                    <div>
+
+                       <svg id="pickupTruckIcon" class="nav-icon-svg" 
+     width="24" 
+     height="24" 
+     viewBox="0 0 24 24" 
+     fill="none" 
+     stroke="#ffffff"
+     stroke-width="2" 
+     stroke-linecap="round" 
+     stroke-linejoin="round" 
+     xmlns="http://www.w3.org/2000/svg">
+    <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/>
+    <path d="M15 18H9"/>
+    <path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"/>
+    <circle cx="17" cy="18" r="2"/>
+    <circle cx="7" cy="18" r="2"/>
+</svg>
+                        <div class="home-action-title">PICKUP</div>
+                        <div class="home-action-desc">Jadwalkan</div>
+                    </div>
+                    <div class="home-action-link"></div>
+                </div>
+                <div class="home-action-card outline" onclick="switchPage('sitrackPage', null)">
+                    <div>
+                        <svg class="nav-icon-svg" 
+     width="26" 
+     height="26" 
+     viewBox="0 0 26 26" 
+     fill="none" 
+     stroke="#0868E3" 
+     stroke-width="2" 
+     stroke-linecap="round" 
+     stroke-linejoin="round" 
+     xmlns="http://www.w3.org/2000/svg">
+    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+    <circle cx="12" cy="10" r="3"/>
+</svg>
+                        <div class="home-action-title">CEK STATUS</div>
+                        <div class="home-action-desc">Penjemputan</div>
+                    </div>
+                    <div class="home-action-link"></div>
+                </div>
+            </div>
+
+ <!-- Level Kontribusi (dipertahankan, dipakai script.js) -->
+            <div class="level-container slide-up" style="margin-top:16px;">
+                <div class="level-header">
+                    <div class="level-title">Level Kontribusi</div>
+                    <div class="level-badge-text none" id="levelBadgeText">Belum Ada Level</div>
+                </div>
+                <div class="progress-bar-outer">
+                    <div class="progress-fill" id="progressBar" style="width:0%"></div>
+                </div>
+                <div class="level-text" id="levelText">Kumpulkan 50 kg untuk level Perunggu</div>
+            </div>
+
+
+            <div class="home-actions-title">Fitur Lainnya</div>
+            <div class="home-actions-grid slide-up">
+                <div class="home-action-card outline" onclick="switchPage('siimpactPage', null)">
+                    <div>
+                      <svg id="impactIcon" class="nav-icon-svg" 
+     width="24" 
+     height="24" 
+     viewBox="0 0 24 24" 
+     fill="none" 
+     stroke="#94a3b8" 
+     stroke-width="2" 
+     stroke-linecap="round" 
+     stroke-linejoin="round" 
+     xmlns="http://www.w3.org/2000/svg">
+    <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+    <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+</svg>
+                        <div class="home-action-title">IMPACT</div>
+                        <div class="home-action-desc">Ringkasan Dampak</div>
+                    </div>
+                    <div class="home-action-link"></div>
+                </div>
+                <div class="home-action-card outline" onclick="switchPage('newsPage', null)">
+                    <div>
+                     <svg xmlns="https://raw.githubusercontent.com/tailwindlabs/heroicons/master/optimized/24/outline/newspaper.svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M4 4h13a2 2 0 0 1 2 2v13a1 1 0 0 1-1 1H6a2 2 0 0 1-2-2V4z"></path>
+  <path d="M18 9h2a1 1 0 0 1 1 1v9a2 2 0 0 1-2 2H6"></path>
+  <line x1="8" y1="8" x2="14" y2="8"></line>
+  <line x1="8" y1="12" x2="17" y2="12"></line>
+  <line x1="8" y1="16" x2="14" y2="16"></line>
+</svg>
+                        <div class="home-action-title">BERITA</div>
+                        <div class="home-action-desc">Kabar terbaru</div>
+                    </div>
+                    <div class="home-action-link"></div>
+                </div>
+            </div>
+
+            <!-- JUDUL RINGKASAN -->
+           
+
+            <!-- RINGKASAN SINGKAT -->
+            <div class="summary-stats slide-up">
+                <div class="summary-card" style="border-left:4px solid #0868E3;">
+                    <div style="font-size:22px;margin-bottom:6px;">📦</div>
+                    <div class="summary-value" id="monthlyPickups" style="color:#0868E3;">0</div>
+                    <div class="summary-label" style="color:#0868E3;font-weight:700;">Penjemputan</div>
+                </div>
+                <div class="summary-card" style="border-left:4px solid #0868E3;">
+                    <div style="font-size:22px;margin-bottom:6px;">⚖️</div>
+                    <div class="summary-value" id="monthlyKg" style="color:#0868E3;">0</div>
+                    <div class="summary-label" style="color:#0868E3;font-weight:700;">Total Kg</div>
+                </div>
+            </div>
+			
+			
+			<!-- SLOGAN 2 KOLOM -->
+            <div class="home-slogan-grid slide-up">
+                <div class="home-slogan-item">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0868E3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        <path d="M9 12l2 2 4-4"/>
+                    </svg>
+                    <div>
+                        <div class="home-slogan-title">Aman & Terpercaya</div>
+                        <div class="home-slogan-desc">Data kamu aman bersama kami</div>
+                    </div>
+                </div>
+				
+                <div class="home-slogan-item">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0868E3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/>
+                        <path d="M15 18H9"/>
+                        <path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"/>
+                        <circle cx="17" cy="18" r="2"/>
+                        <circle cx="7" cy="18" r="2"/>
+                    </svg>
+                   <div>
+                        <div class="home-slogan-title">Kami Siap Menjemput</div>
+                        <div class="home-slogan-desc">Kami akan datang tepat waktu</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- REWARD PAGE (HALAMAN BARU) -->
+        <div id="rewardPage" class="page-section" style="padding-top:16px;">
+            <div class="reward-header slide-up">
+                <div class="reward-icon">🏆</div>
+                <div class="reward-title">Reward Anda</div>
+                <div class="reward-subtitle">Dapatkan hadiah untuk setiap level</div>
+            </div>
+
+            <div class="reward-coin-card slide-up">
+                <div class="reward-coin-label">Total Koin Anda</div>
+                <div class="reward-coin-amount">
+                    <span class="reward-coin-icon">🪙</span>
+                    <span id="rewardTotalKg">0</span>
+                </div>
+                <div class="reward-coin-rupiah" id="rewardTotalRupiah">= Rp0</div>
+            </div>
+			
+			<div class="reward-action-grid slide-up">
+                <div class="reward-action-card">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 1V23M17 5H9.5C8.57174 5 7.6815 5.36875 7.02513 6.02513C6.36875 6.6815 6 7.57174 6 8.5C6 9.42826 6.36875 10.3185 7.02513 10.9749C7.6815 11.6313 8.57174 12 9.5 12H14.5C15.4283 12 16.3185 12.3687 16.9749 13.0251C17.6313 13.6815 18 14.5717 18 15.5C18 16.4283 17.6313 17.3185 16.9749 17.9749C16.3185 18.6313 15.4283 19 14.5 19H6" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <div class="reward-action-label">Tukar ke Uang</div>
+                    <button class="reward-action-btn" onclick="tukarKoinKeUang()">Tukar</button>
+                </div>
+                <div class="reward-action-card">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 3H5L5.4 5M5.4 5H21L18 13H7M5.4 5L7 13M7 13L4.7 15.3C4.1 15.9 4.5 17 5.4 17H18M18 17C17.4696 17 16.9609 17.2107 16.5858 17.5858C16.2107 17.9609 16 18.4696 16 19C16 19.5304 16.2107 20.0391 16.5858 20.4142C16.9609 20.7893 17.4696 21 18 21C18.5304 21 19.0391 20.7893 19.4142 20.4142C19.7893 20.0391 20 19.5304 20 19C20 18.4696 19.7893 17.9609 19.4142 17.5858C19.0391 17.2107 18.5304 17 18 17ZM9 19C9 19.5304 8.78929 20.0391 8.41421 20.4142C8.03914 20.7893 7.53043 21 7 21C6.46957 21 5.96086 20.7893 5.58579 20.4142C5.21071 20.0391 5 19.5304 5 19C5 18.4696 5.21071 17.9609 5.58579 17.5858C5.96086 17.2107 6.46957 17 7 17C7.53043 17 8.03914 17.2107 8.41421 17.5858C8.78929 17.9609 9 18.4696 9 19Z" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <div class="reward-action-label">Belanja di Mart</div>
+                   <button class="reward-action-btn" onclick="belanjaDiMart()">Belanja</button>
+                </div>
+            </div>
+
+            <div class="reward-status slide-up">
+                <div class="reward-item">
+                    <div class="reward-item-label">Level Saat Ini</div>
+                    <div class="reward-item-value" id="rewardCurrentLevel">-</div>
+                </div>
+                <div class="reward-item">
+                    <div class="reward-item-label">Status Reward</div>
+                    <div class="reward-item-value" id="rewardStatus" style="color:#10b981;">-</div>
+                </div>
+            </div>
+            <div class="reward-claim-section slide-up">
+                <div class="reward-amount">Rp50.000</div>
+                <div class="reward-desc">Nilai reward untuk setiap level yang Anda capai</div>
+                <button class="btn-claim" id="btnClaimReward" onclick="claimReward()">
+                    Klaim Reward
+                </button>
+                <div class="reward-info">
+                    <div class="reward-info-text" id="rewardInfoText">
+                        Kumpulkan 50 kg untuk mencapai level Perunggu dan klaim reward pertama Anda!
+                    </div>
+                </div>
+            </div>
+
+           <div class="reward-history-section slide-up">
+                <div class="reward-history-title">Riwayat Transaksi Koin</div>
+                <div class="history-item-list" id="rewardHistoryList">
+                    <!-- diisi otomatis oleh updateRewardHistory() -->
+                </div>
+            </div>
+
+            <button class="btn-back slide-up" onclick="backToHome()">
+                ← Kembali ke Beranda
+            </button>
+        </div>
+
+        <!-- SiTrack Page -->
+        <div id="sitrackPage" class="page-section">
+           <div class="page-header-box slide-up">
+
+    <div class="page-header-title">SiTrack</div>
+</div>
+            <div class="track-status slide-up" style="margin-top:16px;">
+                <div class="track-title">Status Penjemputan</div>
+
+                <div class="step-tracker">
+                    <div class="step-item" id="stepItem1">
+                        <div class="step-connector-top"></div>
+                        <div class="step-circle" id="statusIcon1"><span class="step-num">1</span></div>
+                        <div class="step-connector-bot"></div>
+                        <div class="step-content">
+                            <div class="step-label">Dijadwalkan</div>
+                            <div class="step-desc" id="statusDesc1">Belum ada jadwal</div>
+                        </div>
+                    </div>
+                    <div class="step-item" id="stepItem2">
+                        <div class="step-connector-top"></div>
+                        <div class="step-circle" id="statusIcon2"><span class="step-num">2</span></div>
+                        <div class="step-connector-bot"></div>
+                        <div class="step-content">
+                            <div class="step-label">Dijemput</div>
+                            <div class="step-desc" id="statusDesc2">Menunggu penjemputan</div>
+                        </div>
+                    </div>
+                    <div class="step-item" id="stepItem3">
+                        <div class="step-connector-top"></div>
+                        <div class="step-circle" id="statusIcon3"><span class="step-num">3</span></div>
+                        <div class="step-connector-bot"></div>
+                        <div class="step-content">
+                            <div class="step-label">Diproses</div>
+                            <div class="step-desc" id="statusDesc3">Menunggu diproses</div>
+                        </div>
+                    </div>
+                    <div class="step-item" id="stepItem4">
+                        <div class="step-connector-top"></div>
+                        <div class="step-circle" id="statusIcon4"><span class="step-num">4</span></div>
+                        <div class="step-connector-bot" style="visibility:hidden"></div>
+                        <div class="step-content">
+                            <div class="step-label">Selesai</div>
+                            <div class="step-desc" id="statusDesc4">Belum selesai</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+               <div class="track-status slide-up">
+            <div class="track-title">Status Penjemputan Aktif</div>
+                <div id="activePickupStatus">
+                    <div class="status-desc" style="text-align:center;padding:20px 0">Belum ada penjemputan aktif</div>
+                </div>
+            </div>
+
+            <div id="cancelPickupSection" style="display:none;" class="slide-up">
+                <button class="btn-cancel" onclick="cancelPickup()" style="width:100%;padding:14px;background:#ef4444;color:#fff;border:none;border-radius:12px;font-weight:600;font-size:15px;cursor:pointer;margin-top:16px;">
+                    Batalkan Penjemputan
+                </button>
+            </div>
+
+            <div class="track-status slide-up">
+                <div class="track-title">Riwayat Penjemputan</div>
+                <div id="historyContainer">
+                    <div class="status-desc" style="text-align:center;padding:20px 0">Belum ada riwayat penjemputan</div>
+                </div>
+            </div>
+     <!-- STATUS PESANAN — step tracker style -->
+            <div class="track-status slide-up" style="margin-top:20px;">
+                <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
+                    <div class="track-title" style="margin-bottom:0;">Status Pesanan</div>
+                    <button onclick="loadMyOrders(this)" style="padding:6px 12px;background:#eff6ff;color:#2563eb;border:none;border-radius:8px;font-size:12px;font-weight:600;cursor:pointer;">Refresh</button>
+                </div>
+                <div id="myOrdersList">
+                    <div style="text-align:center;padding:20px 0;color:#94a3b8;font-size:14px;">Memuat pesanan...</div>
+                </div>
+            </div>
+	
+  <div class="level-card slide-up" id="levelBadge">
+                <div class="level-title">Level Kontribusi</div>
+                <div class="level-name" id="levelName">-</div>
+                <div class="level-progress" id="levelProgress">Kumpulkan 50 kg untuk level Perunggu</div>
+            </div>
+
+        </div>
+
+        <!-- SiPick Page -->
+        <div id="sipickPage" class="page-section" style="padding-top:16px;">
+    <div class="sipick-banner slide-up" id="sipickBanner">
+        <div class="sipick-banner-text">
+            <div class="sipick-banner-title">Jadwalkan <span>Pickup</span></div>
+            <div class="sipick-banner-desc">Pilih kategori sampah dan jadwalkan penjemputan</div>
+        </div>
+    </div>
+            <div class="pick-form slide-up">
+              
+		
+		<div class="form-group">
+    		<label class="form-label">Pilih Kategori Sampah</label>
+    		<div class="waste-category-grid-v2">
+        	<div class="waste-category-card-v2" data-category="organik" onclick="selectWasteCategory('organik', this)">
+           	 <div class="wc-img-wrap">
+                <img src="https://i.ibb.co.com/wFhfs0tD/organik.webp" alt="Organik" class="wc-img">
+                <div class="wc-check">✓</div>
+            </div>
+           <div class="wc-info">
+                <div class="wc-name-v2">Organik</div>
+                <div class="wc-rate-v2">500 koin/kg</div>
+ 		<div class="wc-more-link" onclick="event.stopPropagation(); showWasteDetail('organik')">Selengkapnya <span>&rsaquo;</span></div>
+            </div>
+        </div>
+        <div class="waste-category-card-v2" data-category="plastik" onclick="selectWasteCategory('plastik', this)">
+            <div class="wc-img-wrap">
+                <img src="https://i.ibb.co.com/9mQ9GN4q/plastik.webp" alt="Plastik" class="wc-img">
+                <div class="wc-check">✓</div>
+            </div>
+            <div class="wc-info">
+                <div class="wc-name-v2">Plastik</div>   
+                <div class="wc-rate-v2">1000 koin/kg</div>
+		<div class="wc-more-link" onclick="event.stopPropagation(); showWasteDetail('plastik')">Selengkapnya <span>&rsaquo;</span></div>
+            </div>
+        </div>
+    </div>
+    <input type="hidden" id="pickupCategory" value="">
+</div>
+
+<div class="form-group">
+    <label class="form-label">Tanggal & Estimasi Berat</label>
+   <div class="pick-info-grid">
+    <!-- Card Tanggal — sekarang pakai custom picker -->
+<div class="pick-info-box" onclick="openPickField('pickupDate')">
+    <div class="pick-info-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+            <line x1="16" y1="2" x2="16" y2="6"></line>
+            <line x1="8" y1="2" x2="8" y2="6"></line>
+            <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+    </div>
+    <div class="pick-info-text">
+        <div class="pick-info-label" id="dateLabel">Pilih Tanggal</div>
+    </div>
+    <div class="pick-info-arrow">›</div>
+    <input type="hidden" id="pickupDate">
+</div>
+
+
+   <!-- Card Berat — sekarang sama seperti card Tanggal -->
+<div class="pick-info-box" onclick="openWeightModal()">
+    <div class="pick-info-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2a5 5 0 0 1 5 5v3H7V7a5 5 0 0 1 5-5z"/>
+            <path d="M5 10h14l-1 11H6z"/>
+        </svg>
+    </div>
+    <div class="pick-info-text">
+        <div class="pick-info-label" id="weightLabel">Berat (kg)</div>
+    </div>
+    <div class="pick-info-arrow">›</div>
+    <!-- Input tersembunyi, tetap ada untuk logic -->
+    <input type="number" id="pickupWeight" class="pick-info-input-hidden" min="1" step="1" value="">
+</div>
+
+<!-- ===== MODAL POPUP INPUT BERAT ===== -->
+<div class="weight-modal-overlay" id="weightModalOverlay" onclick="closeWeightModal(event)">
+    <div class="weight-modal" onclick="event.stopPropagation()">
+        <button class="weight-modal-close" onclick="closeWeightModal()">✕</button>
+        <div class="weight-modal-header">
+            <div class="weight-modal-icon">⚖️</div>
+            <h3 class="weight-modal-title">Masukkan Berat Sampah</h3>
+            <p class="weight-modal-desc">Estimasi berat sampah dalam kilogram (kg)</p>
+        </div>
+        <div class="weight-modal-body">
+            <input type="number" id="weightModalInput" class="weight-modal-input" 
+                   placeholder="Contoh: 5" min="1" step="1" onkeydown="if(event.key==='Enter')submitWeight()">
+            <div class="weight-modal-quick">
+                <button class="weight-quick-btn" onclick="setWeight(1)">1 kg</button>
+                <button class="weight-quick-btn" onclick="setWeight(3)">3 kg</button>
+                <button class="weight-quick-btn" onclick="setWeight(5)">5 kg</button>
+                <button class="weight-quick-btn" onclick="setWeight(10)">10 kg</button>
+                <button class="weight-quick-btn" onclick="setWeight(15)">15 kg</button>
+                <button class="weight-quick-btn" onclick="setWeight(20)">20 kg</button>
+            </div>
+        </div>
+        <button class="weight-modal-submit" onclick="submitWeight()">Simpan Berat</button>
+    </div>
+</div>
+</div>
+</div>
+<div class="form-group">
+   <label class="form-label form-label-thin">Alamat Penjemputan</label>
+   <div class="pick-address-box">
+        <div class="pick-address-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+            </svg>
+        </div>
+        <textarea class="pick-address-input" id="pickupAlamat" placeholder="Alamat penjemputan" rows="1"></textarea>
+    </div>
+</div>
+
+<div class="form-group">
+   <label class="form-label form-label-thin">Catatan (Opsional)</label>
+  <div class="pick-address-box">
+        <div class="pick-address-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <path d="M14 2v6h6"/>
+                <path d="M9 13h6M9 17h6"/>
+            </svg>
+        </div>
+        <textarea class="pick-address-input" id="pickupNote" placeholder="Contoh: Sampah diletakkan di depan rumah ya" maxlength="120" rows="1"></textarea>
+    </div>
+
+    <button class="btn-primary" onclick="schedulePickup()">Jadwalkan Sekarang</button>
+</div>
+
+           <button class="btn-primary" style="margin-top:16px;" onclick="switchPage('sitrackPage', null)">
+                Lihat Status
+            </button>
+        </div>
+   </div>
+<!-- Custom Date Picker Modal -->
+<div class="date-picker-overlay" id="datePickerOverlay" onclick="closeDatePicker(event)">
+    <div class="date-picker-modal" onclick="event.stopPropagation()">
+        <div class="date-picker-header">
+            <button class="date-picker-nav" onclick="changeMonth(-1)">‹</button>
+            <div class="date-picker-title">
+                <span id="pickerMonthYear">Juli 2026</span>
+            </div>
+            <button class="date-picker-nav" onclick="changeMonth(1)">›</button>
+        </div>
+        <div class="date-picker-weekdays">
+            <div>Min</div><div>Sen</div><div>Sel</div><div>Rab</div><div>Kam</div><div>Jum</div><div>Sab</div>
+        </div>
+        <div class="date-picker-days" id="pickerDays"></div>
+        <div class="date-picker-footer">
+            <button class="date-picker-btn-secondary" onclick="closeDatePicker()">Batal</button>
+            <button class="date-picker-btn-primary" onclick="selectToday()">Hari Ini</button>
+        </div>
+    </div>
+</div>
+
+        <!-- SiMart Page -->
+       <div id="simartPage" class="page-section" style="padding-top:16px;">
+    <div class="simart-header slide-up">
+        <div class="simart-header-top">
+            <div class="simart-header-title">SiMart</div>
+            <div class="simart-header-icons">
+               <button class="simart-header-icon-btn" type="button" aria-label="Keranjang" onclick="switchPage('cartPage', null); renderCartItems();">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 6h15l-1.5 9h-12z" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6 6L5 3H2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="9.5" cy="19.5" r="1.5"/>
+                        <circle cx="18" cy="19.5" r="1.5"/>
+                    </svg>
+                    <span class="cart-badge" id="cartBadge">0</span>
+                </button>
+              <button class="simart-header-icon-btn" type="button" aria-label="Notifikasi" onclick="switchPage('notifPage', null)">
+                   
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M13.73 21a2 2 0 0 1-3.46 0" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                   <span class="cart-badge" id="notifBadgeSimart">0</span>
+                </button>
+            </div>
+        </div>
+        <div class="simart-search-bar">
+            <svg class="simart-search-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="11" cy="11" r="7" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M21 21l-4.35-4.35" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <input type="text" class="simart-search-input" id="simartSearchInput" placeholder="Cari produk daur ulang...">
+            <button class="simart-search-filter-btn" type="button" aria-label="Filter">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 5h16M7 12h10M10 19h4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+	<!-- BANNER PROMO — scroll horizontal, gambar dari admin -->
+            <div class="simart-banner-wrapper slide-up">
+                <div class="simart-banner-track" id="simartBannerTrack">
+                    <div style="padding:30px 0;color:#94a3b8;font-size:13px;text-align:center;width:100%;">Memuat banner...</div>
+                </div>
+                <div class="simart-banner-dots" id="simartBannerDots"></div>
+            </div>
+
+           <div class="simart-category-tabs slide-up">
+                <button class="simart-cat-btn active" onclick="filterSimartCategory('all', this)">
+                    <div class="simart-cat-icon-box">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+                    </div>
+                    <span>Semua</span>
+                </button>
+                <button class="simart-cat-btn" onclick="filterSimartCategory('maggot', this)">
+                    <div class="simart-cat-icon-box">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2c2 2 3 4 3 6a3 3 0 0 1-6 0c0-2 1-4 3-6z"/><path d="M6 14c0-3 2.5-5 6-5s6 2 6 5-2.5 6-6 6-6-3-6-6z"/></svg>
+                    </div>
+                    <span>Pakan</span>
+                </button>
+                <button class="simart-cat-btn" onclick="filterSimartCategory('pupuk', this)">
+                    <div class="simart-cat-icon-box">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22s7-4.5 7-11a7 7 0 0 0-14 0c0 6.5 7 11 7 11z"/><circle cx="12" cy="11" r="2.5"/></svg>
+                    </div>
+                    <span>Pupuk</span>
+                </button>
+                <button class="simart-cat-btn" onclick="filterSimartCategory('aksesoris', this)">
+                    <div class="simart-cat-icon-box">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="9" cy="7" r="4"/><path d="M9 11v3.5"/><circle cx="9" cy="18" r="3"/></svg>
+                    </div>
+                    <span>Aksesoris</span>
+                </button>
+                <button class="simart-cat-btn" onclick="filterSimartCategory('lainnya', this)">
+                    <div class="simart-cat-icon-box">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="12" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="19" cy="12" r="1.5"/></svg>
+                    </div>
+                    <span>Lainnya</span>
+                </button>
+            </div>
+          
+	
+<div class="simart-section-header">
+              <h3 class="simart-section-title">Produk Unggulan</h3>
+              <a href="javascript:void(0)" class="simart-see-all" onclick="filterSimartCategory('all', document.querySelector('.simart-cat-btn'))">Lihat Semua &rsaquo;</a>
+          </div>
+
+          <div class="products-grid slide-up" id="simartProductsGrid">
+                <div style="text-align:center;padding:20px 0;color:#94a3b8;font-size:14px;grid-column:1/-1;">Memuat produk...</div>
+            </div>
+
+        </div><!-- end simartPage -->
+
+        <!-- Checkout Page -->
+        <div id="checkoutPage" class="page-section" style="padding-top:16px;">
+            <div class="page-header-box slide-up">
+                <div class="page-header-title">Checkout</div>
+            </div>
+
+            <div id="checkoutItemsList" class="track-status slide-up" style="margin-top:16px;"></div>
+
+            <div class="form-group" style="margin-top:16px;">
+                <label class="form-label form-label-thin">Alamat Pengiriman</label>
+                <div class="pick-address-box">
+                    <div class="pick-address-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                    </div>
+                    <textarea class="pick-address-input" id="checkoutAlamat" placeholder="Alamat pengiriman" rows="1"></textarea>
+                </div>
+            </div>
+
+          <div class="checkout-koin-box track-status slide-up" style="margin-top:16px;">
+                <div style="display:flex;justify-content:space-between;align-items:center;">
+                    <div>
+                        <div class="track-title" style="margin-bottom:2px;">Gunakan Koin</div>
+                        <div style="font-size:12px;color:#64748b;" id="checkoutSaldoKoinText">Saldo: 0 koin</div>
+                    </div>
+                    <label class="checkout-koin-switch">
+                        <input type="checkbox" id="checkoutPakaiKoin" onchange="toggleGunakanKoinCheckout()">
+                        <span class="checkout-koin-slider"></span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="track-status slide-up" style="margin-top:16px;">
+                <div style="display:flex;justify-content:space-between;align-items:center;">
+                    <span class="track-title" style="margin-bottom:0;">Subtotal</span>
+                    <span id="checkoutSubtotalText" style="font-size:14px;color:#1e293b;">Rp0</span>
+                </div>
+                <div style="display:flex;justify-content:space-between;align-items:center;margin-top:6px;" id="checkoutPotonganRow">
+                    <span class="track-title" style="margin-bottom:0;color:#10b981;">Potongan Koin</span>
+                    <span id="checkoutPotonganText" style="font-size:14px;color:#10b981;">-Rp0</span>
+                </div>
+                <div style="display:flex;justify-content:space-between;align-items:center;margin-top:10px;padding-top:10px;border-top:1px solid #f1f5f9;">
+                    <span class="track-title" style="margin-bottom:0;">Total Bayar</span>
+                    <span id="checkoutTotalText" style="font-weight:700;font-size:16px;color:#1e293b;">Rp0</span>
+                </div>
+            </div>
+
+            <button class="btn-primary" style="margin-top:16px;" onclick="submitCheckout()">Konfirmasi Pesanan</button>
+            <button class="btn-back slide-up" onclick="switchPage('simartPage', null)" style="margin-top:10px;">
+                ← Kembali ke SiMart
+            </button>
+        </div>
+
+        <!-- SiImpact Page -->
+        <div id="siimpactPage" class="page-section">
+            <div class="page-header-box slide-up" style="margin-top:16px;">
+                <div class="page-header-title">SiImpact</div>
+            </div>
+
+            <div class="impact-card slide-up" style="background:linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);">
+                <div class="impact-icon">🌍</div>
+                <div class="impact-value" id="impactCarbon" style="color:#1e40af;">0 kg</div>
+                <div class="impact-label" style="color:#1e3a8a;">Pengurangan Emisi Karbon</div>
+                <div class="impact-desc" style="color:#1e40af;">
+                    Sampah organik yang Anda kelola mengurangi emisi gas rumah kaca dari pembusukan di TPA
+                </div>
+            </div>
+
+            <div class="impact-card slide-up" style="background:linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);">
+                <div class="impact-icon">🌳</div>
+                <div class="impact-value" id="impactTrees" style="color:#065f46;">0</div>
+                <div class="impact-label" style="color:#064e3b;">Setara Pohon Ditanam</div>
+                <div class="impact-desc" style="color:#065f46;">
+                    Kontribusi Anda setara dengan menanam pohon yang menyerap karbon selama setahun
+                </div>
+            </div>
+
+            <div class="impact-card slide-up" style="background:linear-gradient(135deg, #fef9c3 0%, #fde68a 100%);">
+                <div class="impact-icon">🥩</div>
+                <div class="impact-value" id="impactProtein" style="color:#78350f;">0 kg</div>
+                <div class="impact-label" style="color:#78350f;">Protein Maggot Dihasilkan</div>
+                <div class="impact-desc" style="color:#92400e;">
+                    Sampah organik Anda menghasilkan protein berkualitas tinggi untuk pakan ternak
+                </div>
+            </div>
+
+            <div class="impact-card slide-up" style="background:linear-gradient(135deg, #fff7ed 0%, #fed7aa 100%);">
+                <div class="impact-icon">🌾</div>
+                <div class="impact-value" id="impactFertilizer" style="color:#7c2d12;">0 kg</div>
+                <div class="impact-label" style="color:#7c2d12;">Pupuk Organik Dihasilkan</div>
+                <div class="impact-desc" style="color:#9a3412;">
+                    Residu dari proses budidaya menjadi pupuk organik berkualitas untuk pertanian
+                </div>
+            </div>
+        </div>
+
+        <!-- News Page -->
+        <div id="newsPage" class="page-section">
+    <div class="page-header-box slide-up">
+    <div class="page-header-title">Berita</div>
+</div>
+
+    <div class="news-category-tabs" id="newsCategoryTabs">
+        <button class="news-tab active" data-cat="Semua" onclick="filterNewsCategory('Semua', this)">Semua</button>
+        <button class="news-tab" data-cat="Lingkungan" onclick="filterNewsCategory('Lingkungan', this)">Lingkungan</button>
+        <button class="news-tab" data-cat="Nasional" onclick="filterNewsCategory('Nasional', this)">Nasional</button>
+        <button class="news-tab" data-cat="Internasional" onclick="filterNewsCategory('Internasional', this)">Internasional</button>
+        <button class="news-tab" data-cat="Kebijakan" onclick="filterNewsCategory('Kebijakan', this)">Kebijakan</button>
+        <button class="news-tab" data-cat="Edukasi" onclick="filterNewsCategory('Edukasi', this)">Edukasi</button>
+    </div>
+
+    <h3 class="news-section-label" id="newsTopLabel" style="display:none;">Top Berita</h3>
+    <div id="newsTopContainer" class="slide-up"></div>
+
+    <h3 class="news-section-label">Berita Terbaru</h3>
+    <div id="newsListContainer" class="slide-up">
+        <div style="text-align:center;padding:30px 0;color:#94a3b8;font-size:14px;">Memuat berita...</div>
+    </div>
+</div>
+
+        <!-- News Detail Page -->
+        <div id="newsDetailPage" class="page-section">
+            <div class="page-header-box slide-up" style="margin-top:16px;">
+                <div class="page-header-icon">📰</div>
+                <div class="page-header-title">Detail Berita</div>
+            </div>
+            <div class="news-detail-card slide-up" id="newsDetailContent">
+                <!-- diisi oleh JS -->
+            </div>
+            <button class="btn-back slide-up" onclick="switchPage('newsPage', null)">
+                ← Kembali ke Berita
+            </button>
+        </div>
+
+        <!-- Profile Page -->
+        <div id="profilePage" class="page-section" style="padding-top:16px;">
+            <div class="page-header-box slide-up">
+                <div class="page-header-icon">👤</div>
+                <div class="page-header-title">Profil Saya</div>
+            </div>
+            <!-- Header Profil -->
+            <div class="profile-header slide-up" style="position:relative;overflow:hidden;">
+                <div style="position:absolute;top:-30px;right:-30px;width:120px;height:120px;background:rgba(255,255,255,0.08);border-radius:50%;"></div>
+                <div style="position:absolute;bottom:-20px;left:-20px;width:80px;height:80px;background:rgba(255,255,255,0.06);border-radius:50%;"></div>
+                <div class="profile-avatar" style="box-shadow:0 4px 16px rgba(0,0,0,0.15);">👤</div>
+                <div class="profile-name" id="profileName" style="font-size:24px;font-weight:800;">User</div>
+                <div id="profileToko" style="font-size:13px;opacity:0.85;margin-top:2px;">Toko: -</div>
+                <div id="profileLevelBadge" style="display:inline-block;margin-top:10px;padding:5px 16px;background:rgba(255,255,255,0.25);border-radius:20px;font-size:12px;font-weight:700;">Belum Ada Level</div>
+            </div>
+
+            <!-- Kartu Info Akun -->
+            <div class="slide-up" style="background:#fff;border-radius:20px;padding:6px 4px;margin-bottom:16px;box-shadow:0 6px 28px rgba(0,0,0,0.30);">
+                <div style="padding:12px 16px 6px;font-size:12px;font-weight:700;color:#94a3b8;letter-spacing:0.5px;">INFORMASI AKUN</div>
+
+                <div style="display:flex;align-items:center;gap:14px;padding:13px 16px;border-bottom:1px solid #f1f5f9;">
+                    <div style="width:40px;height:40px;border-radius:12px;background:#0868e3;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;">👤</div>
+                    <div style="flex:1;">
+                        <div style="font-size:12px;color:#94a3b8;margin-bottom:2px;">Nama Lengkap</div>
+                        <div style="font-size:15px;font-weight:700;color:#1e293b;" id="profileInfoNama">-</div>
+                    </div>
+                </div>
+
+                <div style="display:flex;align-items:center;gap:14px;padding:13px 16px;border-bottom:1px solid #f1f5f9;">
+                    <div style="width:40px;height:40px;border-radius:12px;background:#0868e3;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;">🏪</div>
+                    <div style="flex:1;">
+                        <div style="font-size:12px;color:#94a3b8;margin-bottom:2px;">Nama Toko</div>
+                        <div style="font-size:15px;font-weight:700;color:#1e293b;" id="profileInfoToko">-</div>
+                    </div>
+                </div>
+
+                <div style="display:flex;align-items:center;gap:14px;padding:13px 16px;border-bottom:1px solid #f1f5f9;">
+                    <div style="width:40px;height:40px;border-radius:12px;background:##0868e3; display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;">📱</div>
+                    <div style="flex:1;">
+                        <div style="font-size:12px;color:#94a3b8;margin-bottom:2px;">Nomor HP / WA</div>
+                        <div style="font-size:15px;font-weight:700;color:#1e293b;" id="profileInfoTelepon">-</div>
+                    </div>
+                </div>
+
+                <div style="display:flex;align-items:center;gap:14px;padding:13px 16px;">
+                    <div style="width:40px;height:40px;border-radius:12px;background:#0868e3;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;">📍</div>
+                    <div style="flex:1;">
+                        <div style="font-size:12px;color:#94a3b8;margin-bottom:2px;">Alamat</div>
+                        <div style="font-size:15px;font-weight:700;color:#1e293b;line-height:1.4;" id="profileInfoAlamat">-</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kartu Statistik Kontribusi -->
+            <div class="slide-up" style="background:#fff;border-radius:20px;padding:6px 4px;margin-bottom:16px;box-shadow:0 6px 28px rgba(0,0,0,0.30);">
+                <div style="padding:12px 16px 6px;font-size:12px;font-weight:700;color:#94a3b8;letter-spacing:0.5px;">KONTRIBUSI SAYA</div>
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:0;">
+                    <div style="padding:16px;border-right:1px solid #f1f5f9;border-bottom:1px solid #f1f5f9;text-align:center;">
+                        <div style="font-size:28px;font-weight:800;color:#4A90E2;" id="profileTotalKg">0</div>
+                        <div style="font-size:12px;color:#64748b;margin-top:4px;">Total Kg Limbah</div>
+                    </div>
+                    <div style="padding:16px;border-bottom:1px solid #f1f5f9;text-align:center;">
+                        <div style="font-size:28px;font-weight:800;color:#52C67A;" id="profileTotalPickup">0</div>
+                        <div style="font-size:12px;color:#64748b;margin-top:4px;">Penjemputan</div>
+                    </div>
+                    <div style="padding:16px;border-right:1px solid #f1f5f9;text-align:center;">
+                        <div style="font-size:28px;font-weight:800;color:#f59e0b;" id="profileTotalOrder">0</div>
+                        <div style="font-size:12px;color:#64748b;margin-top:4px;">Pesanan</div>
+                    </div>
+                    <div style="padding:16px;text-align:center;">
+                        <div style="font-size:16px;font-weight:800;color:#7c3aed;" id="profileLevel">-</div>
+                        <div style="font-size:12px;color:#64748b;margin-top:4px;">Level Saat Ini</div>
+                    </div>
+                </div>
+            </div>
+
+           <!-- Menu Aksi -->
+            <div class="profile-menu slide-up">
+                <div class="menu-item" onclick="switchPage('activityPage', null)">
+                    <div class="menu-icon" style="background:#f1f5f9;">📋</div>
+                    <div class="menu-text">
+                        <div class="menu-label">Aktivitas Terakhir</div>
+                        <div class="menu-desc">Riwayat pesanan & penjemputan terbaru</div>
+                    </div>
+                    <div class="menu-arrow">›</div>
+                </div>
+                <div class="menu-item" onclick="goToRewardPage()">
+					
+                    <div class="menu-icon" style="background:#fef3c7;">🏆</div>
+                    <div class="menu-text">
+                        <div class="menu-label">Reward Saya</div>
+                        <div class="menu-desc">Klaim reward berdasarkan level</div>
+                    </div>
+                    <div class="menu-arrow">›</div>
+                </div>
+                <div class="menu-item" onclick="switchPage('sitrackPage', null)">
+                    <div class="menu-icon" style="background:#f0fdf4;">🚛</div>
+                    <div class="menu-text">
+                        <div class="menu-label">Riwayat Penjemputan</div>
+                        <div class="menu-desc">Lihat semua jadwal dan riwayat</div>
+                    </div>
+                    <div class="menu-arrow">›</div>
+                </div>
+                <div class="menu-item" onclick="switchPage('simartPage', null)">
+                    <div class="menu-icon" style="background:#eff6ff;">🛒</div>
+                    <div class="menu-text">
+                        <div class="menu-label">Riwayat Pesanan</div>
+                        <div class="menu-desc">Lihat semua pesanan saya</div>
+                    </div>
+                    <div class="menu-arrow">›</div>
+                </div>
+                <div class="menu-item" onclick="logout()">
+                    <div class="menu-icon" style="background:#fee2e2;">🚪</div>
+                    <div class="menu-text">
+                        <div class="menu-label" style="color:#dc2626;">Keluar</div>
+                        <div class="menu-desc">Logout dari akun ini</div>
+                    </div>
+                    <div class="menu-arrow" style="color:#dc2626;">›</div>
+                </div>
+            </div>
+        </div>
+		
+
+<!-- NOTIFICATION PAGE (dari popup jadi halaman) -->
+        <div id="notifPage" class="page-section" style="padding-top:16px;">
+            <div class="page-header-box slide-up">
+                <div class="page-header-icon">🔔</div>
+                <div class="page-header-title">Notifikasi</div>
+            </div>
+            <div id="notifItemsList" style="margin-top:8px;"></div>
+        </div>
+
+        <!-- ACTIVITY PAGE (pindahan dari Home) -->
+        <div id="activityPage" class="page-section" style="padding-top:16px;">
+            <div class="page-header-box slide-up">
+                <div class="page-header-icon">📋</div>
+                <div class="page-header-title">Aktivitas Terakhir</div>
+            </div>
+            <div class="track-status slide-up" style="margin-top:4px;">
+                <div id="homeLastActivity">
+                    <div style="text-align:center;padding:16px 0;color:#64748b;font-size:14px;font-weight:500;">Memuat aktivitas...</div>
+                </div>
+            </div>
+        </div>
+  
+	</div>
+    <!-- Bottom Navigation -->
+
+    <!-- Order Modal -->
+    <div id="orderModal" class="modal-overlay">
+        <div class="modal-content slide-up">
+            <div class="modal-title">Konfirmasi Pesanan</div>
+            <div class="modal-text" id="orderModalText"></div>
+            <div style="display:flex;gap:8px;align-items:center;justify-content:center;margin-top:12px;">
+                <label for="orderQty" style="font-size:14px;font-weight:600;color:#1e293b;">Jumlah</label>
+                <input id="orderQty" type="number" min="1" value="1" style="width:80px;padding:8px;border-radius:8px;border:1px solid #e5e7eb;font-size:14px;">
+            </div>
+            <div class="modal-buttons">
+                <button class="modal-btn secondary" onclick="closeOrderModal()">Batal</button>
+                <button class="modal-btn primary" onclick="confirmOrder()">Konfirmasi</button>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Buy Options Modal -->
+    <div id="buyOptionsModal" class="modal-overlay">
+        <div class="modal-content slide-up">
+            <div class="modal-title" id="buyOptionsTitle">Pilih Aksi</div>
+            <div class="modal-text" id="buyOptionsText"></div>
+            <div class="modal-buttons" style="flex-direction:column;gap:10px;">
+                <button class="modal-btn primary" style="width:100%;" onclick="buyNowFromModal()">Beli Sekarang</button>
+                <button class="modal-btn secondary" style="width:100%;" onclick="addToCartFromModal()">Masukkan Keranjang</button>
+                <button class="modal-btn secondary" style="width:100%;background:transparent;color:#94a3b8;" onclick="closeBuyOptionsModal()">Batal</button>
+            </div>
+        </div>
+    </div>
+<!-- Cart Panel -->
+   <!-- Halaman Keranjang -->
+    <div id="cartPage" class="page-section" style="padding-top:16px;">
+        <div class="page-header-box slide-up">
+            <div class="page-header-title">Keranjang Saya</div>
+        </div>
+        <div id="cartItemsList" class="track-status slide-up" style="margin-top:16px;"></div>
+        <div class="track-status slide-up" style="margin-top:16px;display:flex;justify-content:space-between;align-items:center;">
+            <span class="track-title" style="margin-bottom:0;">Total</span>
+            <span id="cartTotalText" style="font-weight:700;font-size:16px;color:#1e293b;">Rp0</span>
+        </div>
+        <button class="btn-primary" style="margin-top:16px;" onclick="checkoutFromCart()">Checkout</button>
+        <button class="btn-back slide-up" onclick="switchPage('simartPage', null)" style="margin-top:10px;">
+            ← Kembali ke SiMart
+        </button>
+    </div>
+
+    <!-- Success Overlay (untuk animasi sukses pesan) -->
+
+    <div id="successOverlay" class="success-overlay">
+    <div class="success-popup">
+        <img src="https://i.ibb.co.com/5XJN9RRZ/image-removebg-preview.png" alt="Logo" class="success-logo-spin">
+        <div class="success-checkmark"></div>
+        <div class="success-text">Pesanan Berhasil!</div>
+        <div class="success-desc">Pesanan Anda sedang diproses</div>
+    </div>
+</div>
+
+
+
+    <!-- CLAIM MODAL -->
+    <div id="claimModal" class="claim-modal-overlay">
+        <div class="claim-modal">
+            <div style="font-size:40px;text-align:center;margin-bottom:8px;">🏆</div>
+            <h3>Klaim Reward</h3>
+            <p>Masukkan data rekening untuk pencairan reward</p>
+            <div class="claim-info-row"><span class="claim-info-label">Level Anda</span><span class="claim-info-value" id="claimModalLevel">-</span></div>
+            <div class="claim-info-row"><span class="claim-info-label">Total Kontribusi</span><span class="claim-info-value" id="claimModalKg">0 kg</span></div>
+            <div class="claim-form-group">
+                <label>Bank / E-Wallet <span style="color:#ef4444">*</span></label>
+                <select id="claimBank">
+                    <option value="">-- Pilih Bank/E-Wallet --</option>
+                    <optgroup label="Bank Nasional">
+                        <option value="BCA">BCA</option>
+                        <option value="Mandiri">Bank Mandiri</option>
+                        <option value="BNI">BNI</option>
+                        <option value="BRI">BRI</option>
+                        <option value="BTN">BTN</option>
+                        <option value="CIMB Niaga">CIMB Niaga</option>
+                        <option value="Danamon">Bank Danamon</option>
+                        <option value="Permata">Bank Permata</option>
+                        <option value="Panin">Bank Panin</option>
+                        <option value="Maybank">Maybank</option>
+                        <option value="OCBC NISP">OCBC NISP</option>
+                        <option value="Sinarmas">Bank Sinarmas</option>
+                        <option value="Muamalat">Bank Muamalat</option>
+                        <option value="BSI">Bank Syariah Indonesia (BSI)</option>
+                    </optgroup>
+                    <optgroup label="Bank Daerah">
+                        <option value="Bank Jambi">Bank Jambi</option>
+                        <option value="Bank Jatim">Bank Jatim</option>
+                        <option value="Bank Jateng">Bank Jateng</option>
+                        <option value="Bank BJB">Bank BJB</option>
+                        <option value="Bank Sumsel Babel">Bank Sumsel Babel</option>
+                    </optgroup>
+                    <optgroup label="E-Wallet">
+                        <option value="GoPay">GoPay</option>
+                        <option value="OVO">OVO</option>
+                        <option value="Dana">DANA</option>
+                        <option value="ShopeePay">ShopeePay</option>
+                        <option value="LinkAja">LinkAja</option>
+                        <option value="Jenius">Jenius (BTPN)</option>
+                        <option value="SeaBank">SeaBank</option>
+                        <option value="Blu BCA">Blu by BCA Digital</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div class="claim-form-group">
+                <label>Nomor Rekening / Akun <span style="color:#ef4444">*</span></label>
+                <input type="tel" id="claimRekening" placeholder="Contoh: 1234567890" inputmode="numeric" maxlength="20">
+            </div>
+            <div class="claim-note">⚠️ Pastikan nomor rekening benar. Admin akan memproses pencairan dalam 1-3 hari kerja.</div>
+            <button id="btnSubmitClaim" onclick="submitClaim()">Kirim Klaim</button>
+            <button class="claim-cancel-btn" onclick="closeClaimModal()">Batal</button>
+        </div>
+    </div>
+    </div><!-- end customerView -->
+
+  <div class="bottom-nav-wrapper"><nav class="bottom-nav">
+    <button class="nav-item" onclick="switchPage('newsPage', this)">
+        <svg class="nav-icon-svg nav-icon-news" viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/><path d="M8 8h8M8 12h8M8 16h4"/></svg>
+        <div class="nav-label">News</div>
+    </button>
+    <button class="nav-item" onclick="switchPage('simartPage', this)">
+        <svg class="nav-icon-svg nav-icon-toko" viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18M16 10a4 4 0 0 1-8 0"/></svg>
+        <div class="nav-label">Toko</div>
+    </button>
+    <div class="nav-spacer"></div>
+    <button class="nav-item" onclick="switchPage('sipickPage', this)">
+        <svg class="nav-icon-svg nav-icon-jemput" viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 5v3h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+        <div class="nav-label">Jemput</div>
+    </button>
+    <button class="nav-item" onclick="switchPage('sitrackPage', this)">
+        <svg class="nav-icon-svg nav-icon-lacak" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <div class="nav-label">Lacak</div>
+    </button>
+</nav>
+<button class="nav-item nav-home active" onclick="switchPage('homePage', this)">
+    <svg class="nav-icon-svg nav-icon-home" viewBox="0 0 24 24"><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/></svg>
+    <div class="nav-label">Home</div>
+</button>
+</div>
+</div>
+
+    <!-- ---------------------------------------------------- -->
+    <!-- 2b) WEB ADMIN (dashboard pengelola)                    -->
+    <!-- ---------------------------------------------------- -->
+    <div id="adminView" class="main-view" style="min-height:100vh;">
+
+   <div class="admin-header">
+    <h1>Admin Panel</h1>
+    <p>Kontrol sistem Platform</p>
+
+    <button class="account-switch-btn" onclick="toggleAccountSwitcher()" title="Ganti Akun">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/>
+            <polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/>
+        </svg>
+    </button>
+
+    <div class="account-switch-dropdown" id="accountSwitchDropdown"></div>
+</div>
+
+    <div class="admin-container">
+        <div id="adminDashboard">
+            <div class="admin-cards">
+                <div class="admin-card" style="border-left:4px solid #3b82f6;">
+                    <div style="font-size:28px;margin-bottom:8px;"></div>
+                    <h3>Total Customer</h3>
+                    <p id="dashTotalCustomer" style="color:#1d4ed8;">0</p>
+                </div>
+                <div class="admin-card" style="border-left:4px solid #f59e0b;">
+                    <div style="font-size:28px;margin-bottom:8px;"></div>
+                    <h3>Penjemputan Aktif</h3>
+                    <p id="dashPickupAktif" style="color:#b45309;">0</p>
+                </div>
+                <div class="admin-card" style="border-left:4px solid #8b5cf6;">
+                    <div style="font-size:28px;margin-bottom:8px;"></div>
+                    <h3>Pesanan Masuk</h3>
+                    <p id="dashPesananMasuk" style="color:#6d28d9;">0</p>
+                </div>
+                <div class="admin-card" style="border-left:4px solid #10b981;">
+                    <div style="font-size:28px;margin-bottom:8px;"></div>
+                    <h3>Total Limbah</h3>
+                    <p id="dashTotalLimbah" style="color:#065f46;">0 kg</p>
+                </div>
+            </div>
+            <div class="admin-section">
+                <h2>Ringkasan Sistem</h2>
+                <div id="dashChart" style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:20px;">
+                    <!-- chart cards injected by JS -->
+                </div>
+                <div id="dashRecentActivity">
+                    <h3 style="font-size:16px;font-weight:700;color:#1e293b;margin-bottom:14px;border-bottom:2px solid #f1f5f9;padding-bottom:12px;">Aktivitas Terbaru</h3>
+                    <div id="dashActivityList" style="color:#64748b;text-align:center;padding:20px 0;font-size:14px;font-weight:500;">Memuat data...</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="adminPickup" class="admin-hidden admin-section">
+            <h2>Permintaan Penjemputan</h2>
+            <div class="admin-table-wrapper">
+                <table id="pickupsTable" class="admin-table">
+                    <thead>
+                        <tr>
+                            <th>Tanggal</th>
+                            <th>Nama</th>
+                            <th>Toko</th>
+                            <th>Berat (kg)</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div class="empty-state" id="pickupsEmpty">
+                <div class="empty-state-icon"></div>
+                <h3>Belum Ada Permintaan Penjemputan</h3>
+                <p>Status tersedia: <strong>Dijadwalkan</strong>, <strong>Dijemput</strong>, <strong>Diproses</strong>, <strong>Selesai</strong>, <strong>Dibatalkan</strong></p>
+            </div>
+            <div style="margin-top:18px;display:flex;gap:10px;align-items:center;">
+                <button class="admin-reload-btn" id="reloadPickupsBtn" onclick="handleReloadPickups(this)">Reload</button>
+                <div style="font-size:13px;color:#64748b">Klik reload untuk mengambil data dari Google Sheets</div>
+            </div>
+            <div style="margin-top:30px;padding:20px;background:#f8fafc;border-radius:12px">
+                <p style="font-size:13px;font-weight:600;color:#64748b;margin-bottom:12px">PREVIEW STATUS:</p>
+                <div style="display:flex;gap:10px;flex-wrap:wrap">
+                    <span class="status-badge status-dijadwalkan">Dijadwalkan</span>
+                    <span class="status-badge status-dijemput">Dijemput</span>
+                    <span class="status-badge status-diproses">Diproses</span>
+                    <span class="status-badge status-selesai">Selesai</span>
+                    <span class="status-badge status-dibatalkan">Dibatalkan</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="adminCustomers" class="admin-hidden admin-section">
+            <h2>Data Customer</h2>
+            <div class="admin-table-wrapper">
+                <table class="admin-table">
+                    <thead>
+                        <tr>
+                            <th>Nama</th>
+                            <th>Toko</th>
+                            <th>Telepon</th>
+                            <th>Total Limbah</th>
+                            <th>Level</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div class="empty-state">
+                <div class="empty-state-icon">👥</div>
+                <h3>Belum Ada Data Customer</h3>
+                <p>Data customer akan muncul setelah ada pengguna yang mendaftar</p>
+            </div>
+            <div style="margin-top:18px;display:flex;gap:10px;align-items:center;">
+                <button class="admin-reload-btn" id="reloadCustomersBtn" onclick="handleReloadCustomers(this)">Reload</button>
+                <div style="font-size:13px;color:#64748b">Klik reload untuk mengambil data dari Google Sheets</div>
+            </div>
+        </div>
+
+        <div id="adminOrders" class="admin-hidden admin-section">
+            <h2>Pesanan Produk</h2>
+            <div class="admin-table-wrapper">
+                <table class="admin-table" id="ordersTable">
+                    <thead>
+                        <tr>
+                            <th>ID Pesanan</th>
+                            <th>Customer</th>
+                            <th>Toko</th>
+                            <th>Produk</th>
+                            <th>Jumlah</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div class="empty-state" id="ordersEmpty">
+                <div class="empty-state-icon">🛒</div>
+                <h3>Belum Ada Pesanan</h3>
+                <p>Pesanan akan muncul setelah ada customer yang melakukan pemesanan</p>
+            </div>
+            <div style="margin-top:18px;display:flex;gap:10px;align-items:center;">
+                <button class="admin-reload-btn" id="reloadOrdersBtn" onclick="handleReloadOrders(this)">Reload</button>
+                <div style="font-size:13px;color:#64748b">Klik reload untuk mengambil data dari Google Sheets</div>
+            </div>
+            <div style="margin-top:30px;padding:20px;background:#f8fafc;border-radius:12px">
+                <p style="font-size:13px;font-weight:600;color:#64748b;margin-bottom:12px">STATUS PESANAN:</p>
+                <div style="display:flex;gap:10px;flex-wrap:wrap">
+                    <span class="status-badge status-pending">Pending</span>
+                    <span class="status-badge status-processing">Processing</span>
+                    <span class="status-badge status-completed">Completed</span>
+                    <span class="status-badge status-cancelled">Cancelled</span>
+                </div>
+            </div>
+        </div>
+        <!-- ADMIN CLAIMS SECTION -->
+        <div id="adminClaims" class="admin-hidden admin-section">
+            <h2>Klaim Reward</h2>
+            <div class="admin-table-wrapper">
+                <table class="admin-table" id="claimsTable">
+                    <thead>
+                        <tr>
+                            <th>Nama</th>
+                            <th>Bank / E-Wallet</th>
+                            <th>No. Rekening</th>
+                            <th>Total Limbah</th>
+                            <th>Level</th>
+                            <th>Waktu Klaim</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            <div class="empty-state" id="claimsEmpty">
+                <div class="empty-state-icon">🏆</div>
+                <h3>Belum Ada Klaim Reward</h3>
+                <p>Klaim reward dari customer akan muncul di sini</p>
+            </div>
+            <div style="margin-top:18px;display:flex;gap:10px;align-items:center;">
+                <button class="admin-reload-btn" id="reloadClaimsBtn" onclick="handleReloadClaims(this)">Reload</button>
+                <div style="font-size:13px;color:#64748b">Klik reload untuk mengambil data klaim terbaru</div>
+            </div>
+        </div>
+<!-- ADMIN PRODUCTS SECTION -->
+        <div id="adminProducts" class="admin-hidden admin-section">
+            <h2>Manajemen Produk</h2>
+            <div style="background:#f8fafc;border-radius:14px;padding:20px;margin-bottom:24px;">
+                <div style="display:grid;gap:14px;">
+                    <div>
+                        <label style="display:block;font-size:13px;font-weight:600;color:#1e293b;margin-bottom:6px;">Nama Produk</label>
+                        <input type="text" id="productFormNama" placeholder="Contoh: Maggot Kering" style="width:100%;padding:11px 13px;border:1px solid #e5e7eb;border-radius:10px;font-size:14px;">
+                    </div>
+                    <div>
+                        <label style="display:block;font-size:13px;font-weight:600;color:#1e293b;margin-bottom:6px;">Harga (angka saja, tanpa titik/koma)</label>
+                        <input type="number" id="productFormHarga" placeholder="Contoh: 10000" style="width:100%;padding:11px 13px;border:1px solid #e5e7eb;border-radius:10px;font-size:14px;">
+                    </div>
+                    <div>
+                        <label style="display:block;font-size:13px;font-weight:600;color:#1e293b;margin-bottom:6px;">Link Foto Produk</label>
+                        <input type="text" id="productFormGambar" placeholder="https://i.imgur.com/xxxx.jpeg" style="width:100%;padding:11px 13px;border:1px solid #e5e7eb;border-radius:10px;font-size:14px;">
+                    </div>
+                    <div>
+                        <label style="display:block;font-size:13px;font-weight:600;color:#1e293b;margin-bottom:6px;">Kategori</label>
+                       <select id="productFormKategori" style="width:100%;padding:11px 13px;border:1px solid #e5e7eb;border-radius:10px;font-size:14px;">
+                            <option value="maggot">Pakan (Maggot)</option>
+                            <option value="pupuk">Pupuk</option>
+                            <option value="rumahtangga">Rumah Tangga</option>
+                            <option value="aksesoris">Aksesoris</option>
+                            <option value="lainnya">Lainnya</option>
+                        </select>
+                    </div>
+                    <input type="hidden" id="productFormId" value="">
+                    <button class="admin-reload-btn" id="productSubmitBtn" onclick="submitProductAdmin()" style="width:fit-content;">+ Tambah Produk</button>
+                </div>
+            </div>
+
+            <div class="admin-table-wrapper">
+                <table class="admin-table" id="productsTable">
+                    <thead>
+                        <tr>
+                            <th>Foto</th>
+                            <th>Nama</th>
+                            <th>Harga</th>
+                            <th>Kategori</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            <div class="empty-state" id="productsEmpty">
+                <div class="empty-state-icon">🛍️</div>
+                <h3>Belum Ada Produk</h3>
+                <p>Tambahkan produk pertama menggunakan form di atas</p>
+            </div>
+            <div style="margin-top:18px;display:flex;gap:10px;align-items:center;">
+                <button class="admin-reload-btn" id="reloadProductsBtn" onclick="handleReloadProducts(this)">Reload</button>
+                <div style="font-size:13px;color:#64748b">Klik reload untuk mengambil data dari Google Sheets</div>
+            </div>
+        </div>
+
+<!-- ADMIN BANNER SECTION -->
+        <div id="adminBanners" class="admin-hidden admin-section">
+            <h2>Manajemen Banner (Maks. 4 Aktif)</h2>
+            <div style="background:#f8fafc;border-radius:14px;padding:20px;margin-bottom:24px;">
+                <div style="display:grid;gap:14px;">
+                    <div>
+                        <label style="display:block;font-size:13px;font-weight:600;color:#1e293b;margin-bottom:6px;">Judul Banner</label>
+                        <input type="text" id="bannerFormJudul" placeholder="Contoh: Produk Daur Ulang Berkualitas" style="width:100%;padding:11px 13px;border:1px solid #e5e7eb;border-radius:10px;font-size:14px;">
+                    </div>
+                    <div>
+                        <label style="display:block;font-size:13px;font-weight:600;color:#1e293b;margin-bottom:6px;">Subjudul / Tagline</label>
+                        <input type="text" id="bannerFormSubjudul" placeholder="Contoh: Belanja mudah, ramah lingkungan." style="width:100%;padding:11px 13px;border:1px solid #e5e7eb;border-radius:10px;font-size:14px;">
+                    </div>
+                    <div>
+                        <label style="display:block;font-size:13px;font-weight:600;color:#1e293b;margin-bottom:6px;">Link Gambar Banner</label>
+                        <input type="text" id="bannerFormGambar" placeholder="https://i.imgur.com/xxxx.jpeg" style="width:100%;padding:11px 13px;border:1px solid #e5e7eb;border-radius:10px;font-size:14px;">
+                    </div>
+                    <input type="hidden" id="bannerFormId" value="">
+                    <button class="admin-reload-btn" id="bannerSubmitBtn" onclick="submitBannerAdmin()" style="width:fit-content;">+ Tambah Banner</button>
+                </div>
+            </div>
+
+            <div class="admin-table-wrapper">
+                <table class="admin-table" id="bannersTable">
+                    <thead>
+                        <tr>
+                            <th>Preview</th>
+                            <th>Judul</th>
+                            <th>Subjudul</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            <div class="empty-state" id="bannersEmpty">
+                <div class="empty-state-icon">🖼️</div>
+                <h3>Belum Ada Banner</h3>
+                <p>Tambahkan banner pertama menggunakan form di atas</p>
+            </div>
+            <div style="margin-top:18px;display:flex;gap:10px;align-items:center;">
+                <button class="admin-reload-btn" id="reloadBannersBtn" onclick="handleReloadBanners(this)">Reload</button>
+                <div style="font-size:13px;color:#64748b">Maksimal 4 banner aktif akan tampil di halaman SiMart</div>
+            </div>
+        </div>
+
+        <!-- ADMIN NEWS SECTION -->
+        <div id="adminNews" class="admin-hidden admin-section">
+            <h2>Manajemen Berita</h2>
+            <div style="background:#f8fafc;border-radius:14px;padding:20px;margin-bottom:24px;">
+                <div style="display:grid;gap:14px;">
+                    <div>
+                        <label style="display:block;font-size:13px;font-weight:600;color:#1e293b;margin-bottom:6px;">Judul Berita</label>
+                        <input type="text" id="newsFormTitle" placeholder="Contoh: SISA+ Raih Penghargaan Lingkungan" style="width:100%;padding:11px 13px;border:1px solid #e5e7eb;border-radius:10px;font-size:14px;">
+                    </div>
+                    <div>
+                        <label style="display:block;font-size:13px;font-weight:600;color:#1e293b;margin-bottom:6px;">Isi Berita</label>
+                        <textarea id="newsFormContent" rows="5" placeholder="Tulis isi berita di sini..." style="width:100%;padding:11px 13px;border:1px solid #e5e7eb;border-radius:10px;font-size:14px;font-family:inherit;resize:vertical;"></textarea>
+                    </div>
+                    <div>
+                        <label style="display:block;font-size:13px;font-weight:600;color:#1e293b;margin-bottom:6px;">Link Foto Berita</label>
+                        <input type="text" id="newsFormGambar" placeholder="https://i.imgur.com/xxxx.jpeg" style="width:100%;padding:11px 13px;border:1px solid #e5e7eb;border-radius:10px;font-size:14px;">
+                    </div>
+		    <div>
+    <label style="display:block;font-size:13px;font-weight:600;color:#1e293b;margin-bottom:6px;">Kategori</label>
+    <select id="newsFormKategori" style="width:100%;padding:11px 13px;border:1px solid #e5e7eb;border-radius:10px;font-size:14px;">
+        <option value="Lingkungan">Lingkungan</option>
+        <option value="Nasional">Nasional</option>
+        <option value="Internasional">Internasional</option>
+        <option value="Kebijakan">Kebijakan</option>
+        <option value="Edukasi">Edukasi</option>
+    </select>
+</div>
+<div style="display:flex;align-items:center;gap:8px;">
+    <input type="checkbox" id="newsFormIsTop" style="width:18px;height:18px;">
+    <label for="newsFormIsTop" style="font-size:13px;font-weight:600;color:#1e293b;">Jadikan Top Berita</label>
+</div>
+                    <button class="admin-reload-btn" onclick="submitNewsAdmin()" style="width:fit-content;">+ Tambah Berita</button>
+                </div>
+            </div>
+
+            <div class="admin-table-wrapper">
+          <table class="admin-table" id="newsTable">
+                    <thead>
+                        <tr>
+                            <th>Foto</th>
+                            <th>Judul</th>
+                            <th>Tanggal</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            <div class="empty-state" id="newsEmpty">
+                <div class="empty-state-icon">📰</div>
+                <h3>Belum Ada Berita</h3>
+                <p>Tambahkan berita pertama menggunakan form di atas</p>
+            </div>
+        </div>
+    </div>
+
+  <div class="admin-nav">
+    <div class="admin-nav-logo">TerraLoop</div>
+
+    <button class="admin-nav-btn admin-home-btn active" onclick="navAdmin('adminDashboard',this)">
+        <svg class="admin-nav-icon" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        <span>Home</span>
+    </button>
+    <button class="admin-nav-btn" onclick="navAdmin('adminCustomers',this)">
+        <svg class="admin-nav-icon" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        <span>Customer</span>
+    </button>
+    <button class="admin-nav-btn" onclick="navAdmin('adminPickup',this)">
+        <svg class="admin-nav-icon" viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 5v3h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+        <span>Jemput</span>
+    </button>
+    <button class="admin-nav-btn" onclick="navAdmin('adminClaims',this)">
+        <svg class="admin-nav-icon" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <span>Klaim</span>
+    </button>
+    <button class="admin-nav-btn" onclick="navAdmin('adminOrders',this)">
+        <svg class="admin-nav-icon" viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18M16 10a4 4 0 0 1-8 0"/></svg>
+        <span>Pesanan</span>
+    </button>
+
+    <div class="admin-nav-divider"></div>
+
+    <button class="admin-nav-btn" onclick="navAdmin('adminProducts',this)">
+        <svg class="admin-nav-icon" viewBox="0 0 24 24"><path d="M20.59 13.41L13.41 20.59a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+        <span>Manajemen Produk</span>
+    </button>
+	
+<button class="admin-nav-btn" onclick="navAdmin('adminBanners',this)">
+        <svg class="admin-nav-icon" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 15l4-4 4 4 5-5 5 5"/></svg>
+        <span>Manajemen Banner</span>
+    </button>
+
+    <button class="admin-nav-btn" onclick="navAdmin('adminNews',this)">
+        <svg class="admin-nav-icon" viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/><path d="M8 8h8M8 12h8M8 16h4"/></svg>
+        <span>Manajemen Berita</span>
+    </button>
+
+    <button class="admin-nav-btn admin-logout-btn" onclick="logoutAdmin()">
+        <svg class="admin-nav-icon" viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+        <span>Logout</span>
+    </button>
+</div>
+</div>
+
+    <!-- ============ LOGIN HANDLER (elemen bantu login) ==== -->
+
+
+    <!-- Semua JavaScript (logic landing, customer, admin, login) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script src="script.js"></script>
+
+<div class="waste-modal-overlay" id="wasteModalOverlay" onclick="closeWasteDetail(event)">
+    <div class="waste-modal">
+        <button class="waste-modal-close" onclick="closeWasteDetail()">✕</button>
+        <div class="waste-modal-header">
+            <img id="wasteModalImg" src="" alt="" class="waste-modal-img">
+            <div class="waste-modal-title" id="wasteModalTitle"></div>
+        </div>
+        <div class="waste-modal-list" id="wasteModalList"></div>
+    </div>
+</div>
+
+</body>
+</html>
